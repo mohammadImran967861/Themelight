@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+.imran{
+    transition: .5s;
+    width: 0;
+    height: 1.5px;
+}
+.nav-item:hover .imran{
+    width: 30px;
+    background-color: #80d6a3;
+}
+
+body{
+    font-family: sans-serif;
+}
+.fa-brands{
+    color:#80d6a3;
+}
+.navbar-brand {
+    padding: 0;
+    height: auto;
+}
+.navbar-toggler .fa-bars {
+    color: black;
+    transition: 0.3s;
+}
+.navbar-toggler:hover {
+    border-color: #80d6a3 !important;
+}
+.navbar-toggler:hover .fa-bars {
+    color: #80d6a3;
+}
+.navbar-nav li a:hover{
+    color:#80d6a3 !important;
+}
+.navbar-toggler{
+    border: 1px solid black !important;
+}
+.navbar-nav li{
+    padding: 0 8px;
+}
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+.navbar-nav li a{
+    font-size: 18px;
+    transition: .3s;
+}
+/* banner section */
+#banner {
+    background: url('image/bg-blur1.jpg');
+    background-size: cover;
+    padding: 250px 0;
+}
+#banner .banner-btn{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 30px;
+    transition: .5s;
+}
+.banner-btn:hover{
+    color:#80d6a3 !important;
+    border-color:#80d6a3 !important;
+}
+#banner h1{
+    color:#80d6a3;
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+/* servives section */
+#services{
+    margin-top: 100px;
+}
+.hr{
+    height: 2px;
+    width: 55px;
+    background-color: #80d6a3;
+    margin-top: 15px;
+}
+.funk{
+    background-image: url(image/svg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.portfolio{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 80px;
+    flex-wrap: wrap;
+}
+.portfolio-img{
+    background-image: url(image/camera.jpg);
+    padding: 80px 0;
+    background-repeat: no-repeat;
+}
+#portfolio button{
+    background-color: #80d6a3;
+    padding: 10px 45px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* ---------------------portfolio section-------------------- */
+
+#team{
+    margin-top: 80px;
+}
+.nav-pills .nav-link{
+    color: black;
+}
+.nav-pills .nav-link:hover, .nav-pills .nav-link.active:hover{
+    color:#80d6a3;
+}
+.nav-pills .nav-link.active{
+    background-color: transparent;
+    color:#80d6a3;
+}
+.main{
+    position: relative;
+    width:100%;
+}
+.overlay{
+    background-color: #80d6a3;
+    position: absolute;
+    top:0;
+    right:0;
+    left:0;
+    bottom:0;
+    margin: 20px;
+    opacity: 0;
+    transition: .5s;
+}
+.text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.text h4{
+    transform: translateY(40px);
+    transition: .5s;
+}
+.text i{
+    transform: translateY(-40px);
+    transition: .5s;
+}
+.main:hover .overlay{
+    opacity: 1;
+}
+.main:hover .text i{
+    transform: translateY(0px);
+}
+.main:hover .text h4{
+    transform: translateY(-0px);
+}
+
+        /* --------------team section--------------- */
+
+
+.team-main img{
+    height: 300px;
+    width: 100%;
+    transition: .3s linear;
+}
+.team-main:hover img{
+    outline: 2px solid #80d6a3;
+}
+.team-main{
+    position: relative;
+    width:100%;
+}
+.team-overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .3s ease;
+    background-color: white;
+}
+.team-main:hover .team-overlay{
+    height: 100%;
+}
+.team-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+            /* ----------------------price section --------------------*/
+#price{
+    background-color: #80d6a3;
+    padding-bottom: 100px
+}
+.price-header{
+    padding: 90px 0;
+}
+.price{
+    border: 1px solid white;
+    padding: 50px 0 150px 0;;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+.price-overlay{
+    position: absolute;
+    background-color: rgb(255, 255, 255, .2);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .3s;
+    opacity: 0;
+
+}
+.price:hover .price-overlay{
+    opacity: 1;
+}
+.style-btn{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s, opacity .3s;
+    opacity: 0;
+    background-color: white;
+    color:#80d6a3;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;;
+}
+.price:hover .style-btn{
+    opacity: 1;
+    margin-top: 20px;
+    /* transform: translateY(20%); Question: eta kaj koreni keno  */
+}
+
+                /* --------------Blog Section-------------- */
+
+#blog{
+    margin-bottom: 100px;
+}
+#blog .blog-hr{
+    height: 2px;
+    width: 50px;
+    background-color:#80d6a3;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom:10px;
+}
+.blog-text a{
+    text-decoration: none;
+    background-color: #80d6a3;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+            /* -----------------testimonial section------------------ */
+
+.testimonial-bottom{
+    margin-top: 50px;
+}
+.testimonial-icon{
+    transition: .5s;
+}
+.testimonial-icon:hover{
+    transform: scale(2);
+}
+
+            /* ----------------Contact First------------------ */
+
+.contact-first{
+    background-color: #768282;
+    padding: 100px;
+}
+.contact-icon i{
+    padding: 10px;
+    background-color: #9e9e9e;
+    border-radius: 50%;
+    color: white;
+}
+
+        /* -----------------------Contact Section------------------------------ */
+
+#contact{
+    background-color: #d6e3e3;
+    padding-bottom: 70px;
+}
+.form-control:focus{
+    box-shadow: none !important;
+    border-color:#80d6a3;
+}
+.form-control{
+    border-color:#80d6a3;
+    resize: none;
+    padding: 12px 25px;
+}
+.send-btn{
+    background-color: #80d6a3;
+    color: white;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 30px;
+    float: right;
+}
+
+        /* -----------------------Footer Section------------------------------- */
+
+#footer{
+    text-align: center;
+    background-color: #252424;
+    padding:50px;
+}
+.top i{
+    color: white;
+    padding:10px;
+}
+.top{
+    position: fixed;
+    margin-top: 200px;
+    bottom: 20px;
+    right: 20px;
+    background-color: #626262;
+    border-radius: 50%;
+    z-index: 9999;
+}
